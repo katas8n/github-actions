@@ -1,0 +1,10 @@
+name: Demo Workflow
+on: workflow_dispatch
+jobs: 
+  # name of job  
+  print-hello: 
+  # OS, Architecture, Machine 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print greeting to the console
+        run: echo Hello World.
